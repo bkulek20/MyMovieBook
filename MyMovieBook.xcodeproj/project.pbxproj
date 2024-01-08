@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BEAA53722B45A666008F418B /* MyMovieBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAA53712B45A666008F418B /* MyMovieBookApp.swift */; };
-		BEAA53742B45A666008F418B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAA53732B45A666008F418B /* ContentView.swift */; };
+		BEAA53742B45A666008F418B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAA53732B45A666008F418B /* HomeView.swift */; };
 		BEAA53762B45A668008F418B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAA53752B45A668008F418B /* Assets.xcassets */; };
 		BEAA53792B45A668008F418B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAA53782B45A668008F418B /* Preview Assets.xcassets */; };
 		BEAA53832B45A668008F418B /* MyMovieBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAA53822B45A668008F418B /* MyMovieBookTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		BEAA536E2B45A666008F418B /* MyMovieBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovieBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAA53712B45A666008F418B /* MyMovieBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMovieBookApp.swift; sourceTree = "<group>"; };
-		BEAA53732B45A666008F418B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BEAA53732B45A666008F418B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BEAA53752B45A668008F418B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEAA53782B45A668008F418B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BEAA537E2B45A668008F418B /* MyMovieBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMovieBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				BEAA53712B45A666008F418B /* MyMovieBookApp.swift */,
-				BEAA53732B45A666008F418B /* ContentView.swift */,
+				BEAA53732B45A666008F418B /* HomeView.swift */,
 				BEAA53752B45A668008F418B /* Assets.xcassets */,
 				BEAA53772B45A668008F418B /* Preview Content */,
 			);
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEAA53742B45A666008F418B /* ContentView.swift in Sources */,
+				BEAA53742B45A666008F418B /* HomeView.swift in Sources */,
 				BEAA53722B45A666008F418B /* MyMovieBookApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
