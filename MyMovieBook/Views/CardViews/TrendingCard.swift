@@ -49,9 +49,9 @@ struct TrendingCard: View {
     }
     func likeFilm(movie: Movie){
         if let userId = viewModel.currentUser?.id {
-//            Task {
-//                try await viewModel.updateFavoriteMovies(forUserId: userId, withMovies: [movie])
-//            }
+            Task {
+                try await viewModel.updateFavoriteMovies(forUserId: userId, withMovies: movie)
+            }
         } else {
             print("User ID is nil")
         }

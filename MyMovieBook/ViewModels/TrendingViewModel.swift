@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 class TrendingViewModel: ObservableObject {
 
     @Published var trending: [Movie] = []

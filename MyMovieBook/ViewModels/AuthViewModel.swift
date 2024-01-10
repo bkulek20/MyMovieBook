@@ -74,25 +74,15 @@ class AuthViewModel: ObservableObject {
         print("fetch çalıştı")
 
     }
-//    func updateFavoriteMovies(forUserId userId: String, withMovies newMovies: [Movie]) async throws {
-//        do {
-//            // Fetch the current favorite movies
-//            let documentRef = Firestore.firestore().collection("users").document(userId)
-//            let snapshot = try await documentRef.getDocument()
-//            var currentUser = try snapshot.data(as: User.self)
-//
-//            // Append new movies to the existing ones
-//            currentUser.favMovies.append(contentsOf: newMovies)
-//
-//            // Encode the updated list of movies
-//            guard let encodedMovies = try? Firestore.Encoder().encode(currentUser.favMovies) else { return }
-//
-//            // Update the user's favorite movies in Firestore
-//            try await documentRef.updateData(["favMovies": encodedMovies])
-//        } catch {
-//            print("DEBUG: Failed to update favorite movies with error \(error.localizedDescription)")
-//        }
-//    }
+    func updateFavoriteMovies(forUserId userId: String, withMovies movies: Movie) async throws {
+            do {
+
+                let encodedMovies = try Firestore.Encoder().encode(movies)
+                try await Firestore.firestore().collection("users").document(userId).updateData(["favMovies": encodedMovies])
+            } catch {
+                print("DEBUG: Failed to update favorite movies with error \(error.localizedDescription)")
+            }
+        }
 
 
 }
