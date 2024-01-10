@@ -13,6 +13,8 @@ struct TrendingCard: View {
     let trendingItem: Movie
     @State var col: Color = .white
     @EnvironmentObject var viewModel: AuthViewModel
+    @StateObject var viewModelFav = FavViewModel()
+
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -47,14 +49,10 @@ struct TrendingCard: View {
         }
         .cornerRadius(10)
     }
+
     func likeFilm(movie: Movie){
-        if let userId = viewModel.currentUser?.id {
-            Task {
-                try await viewModel.updateFavoriteMovies(forUserId: userId, withMovies: movie)
-            }
-        } else {
-            print("User ID is nil")
-        }
+        self.col = .red
+        self.viewModel.favArr.append(movie)
     }
 
 }

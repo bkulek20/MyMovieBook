@@ -17,6 +17,7 @@ protocol AuthenticationFormProtocol {
 class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
     @Published var currentUser: User?
+    @Published var favArr: [Movie] = []
 
     init() {
         self.userSession = Auth.auth().currentUser
@@ -44,7 +45,7 @@ class AuthViewModel: ObservableObject {
 
             self.userSession = result.user
 
-            let user = User(id: result.user.uid, fullname: fullname, email: email, favMovies: []) //create our user
+            let user = User(id: result.user.uid, fullname: fullname, email: email) //create our user
             guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
             try await Firestore.firestore().collection("users").document(user.id).setData(encodedUser) //upload data to firestore
             await fetchUser()
@@ -74,16 +75,6 @@ class AuthViewModel: ObservableObject {
         print("fetch çalıştı")
 
     }
-    func updateFavoriteMovies(forUserId userId: String, withMovies movies: Movie) async throws {
-            do {
-
-                let encodedMovies = try Firestore.Encoder().encode(movies)
-                try await Firestore.firestore().collection("users").document(userId).updateData(["favMovies": encodedMovies])
-            } catch {
-                print("DEBUG: Failed to update favorite movies with error \(error.localizedDescription)")
-            }
-        }
-
 
 }
 

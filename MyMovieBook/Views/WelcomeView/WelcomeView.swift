@@ -22,9 +22,6 @@ struct WelcomeView: View {
 
                 NavigationStack {
                     VStack {
-         
-
-
                         Text("Let's Get Started")
                             .font(.system(size: 24))
                             .fontWeight(.semibold)

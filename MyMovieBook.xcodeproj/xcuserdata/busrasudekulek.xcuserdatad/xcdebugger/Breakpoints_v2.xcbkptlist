@@ -65,6 +65,51 @@
                   endingLineNumber = "20"
                   offsetFromSymbolStart = "568">
                </Location>
+               <Location
+                  uuid = "5C2F3871-96F8-4448-AE29-4488C1EAF1E0 - c7a77b847f467ecc"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;MyMovieBook.DiscoverView, SwiftUI.NavigationStack&lt;SwiftUI.NavigationPath, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.lineSpacing(CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, MyMovieBook.MyButton&lt;MyMovieBook.SignInView&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;&gt;&gt; in MyMovieBook.WelcomeView.body.getter : some"
+                  moduleName = "MyMovieBook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/busrasudekulek/Desktop/MyMovieBook2/MyMovieBook/Views/WelcomeView/WelcomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "500">
+               </Location>
+               <Location
+                  uuid = "5C2F3871-96F8-4448-AE29-4488C1EAF1E0 - 25340305b5390df4"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;MyMovieBook.SignUpView, SwiftUI.NavigationStack&lt;SwiftUI.NavigationPath, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.lineSpacing(CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, MyMovieBook.MyButton&lt;MyMovieBook.SignInView&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;&gt;&gt; in MyMovieBook.WelcomeView.body.getter : some"
+                  moduleName = "MyMovieBook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/busrasudekulek/Desktop/MyMovieBook2/MyMovieBook/Views/WelcomeView/WelcomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "568">
+               </Location>
+               <Location
+                  uuid = "5C2F3871-96F8-4448-AE29-4488C1EAF1E0 - 25340305b5390df4"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;MyMovieBook.SignInView, SwiftUI.NavigationStack&lt;SwiftUI.NavigationPath, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.lineSpacing(CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, MyMovieBook.MyButton&lt;MyMovieBook.SignInView&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;&gt;&gt; in MyMovieBook.WelcomeView.body.getter : some"
+                  moduleName = "MyMovieBook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/busrasudekulek/Desktop/MyMovieBook2/MyMovieBook/Views/WelcomeView/WelcomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "500">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>

@@ -13,6 +13,7 @@ struct DiscoverView: View {
     @State var searchText = ""
     @EnvironmentObject var viewModel: AuthViewModel
 
+
     var body: some View {
 
         VStack{
@@ -76,6 +77,18 @@ struct DiscoverView: View {
                                             }
                                         }.padding(.horizontal
                                         )
+                                        ScrollView(.horizontal, showsIndicators: false) {
+                                            HStack {
+                                                ForEach(viewModel.favArr) { trendingItem in
+                                                    NavigationLink {
+                                                        MovieDetailView(movie: trendingItem)
+                                                    } label: {
+                                                        TrendingCard(trendingItem: trendingItem)
+                                                    }
+                                                }
+                                            }
+                                            .padding(.horizontal)
+                                        }
                                         Button {
                                             viewModel.signOut()
                                         } label: {

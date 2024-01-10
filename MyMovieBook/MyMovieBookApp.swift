@@ -12,6 +12,7 @@ import Firebase
 struct MyMovieBookApp: App {
     @StateObject var viewModel = AuthViewModel()
 
+
     init () {
         FirebaseApp.configure()
     }

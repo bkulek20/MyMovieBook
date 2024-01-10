@@ -13,6 +13,7 @@ struct MovieCardViewVertical: View {
     let trendingItem: Movie
     @State var col: Color = .white
     @EnvironmentObject var viewModel: AuthViewModel
+    @StateObject var viewModelFav = MovieDiscoverViewModel()
 
 
     var body: some View {
@@ -49,13 +50,8 @@ struct MovieCardViewVertical: View {
         .cornerRadius(10)
     }
     func likeFilm(movie: Movie){
-        if let userId = viewModel.currentUser?.id {
-            Task {
-                try await viewModel.updateFavoriteMovies(forUserId: userId, withMovies: movie)
-            }
-        } else {
-            print("User ID is nil")
-        }
+        self.col = .red
+        self.viewModel.favArr.append(movie)
     }
 
 }

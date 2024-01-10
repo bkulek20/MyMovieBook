@@ -16,13 +16,12 @@ struct CommentView: View {
         VStack(){
             TextF(cal: $viewModel.note)
                 .padding()
-            SaveButton(action: asd)
+            SaveButton(action: save)
 
         }
     }
 }
-func asd(){
-
+func save(){
 }
 #Preview {
     CommentView()
