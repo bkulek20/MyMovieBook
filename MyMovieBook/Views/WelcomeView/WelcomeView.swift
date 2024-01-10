@@ -16,15 +16,14 @@ struct WelcomeView: View {
 
         Group {
             if viewModel.userSession != nil {
-                LoginSuccessView()
+
+                DiscoverView()
             } else {
+
                 NavigationStack {
                     VStack {
-                        Image("onboarding_light")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 375, height: 300)
-                            .padding(.horizontal)
+         
+
 
                         Text("Let's Get Started")
                             .font(.system(size: 24))

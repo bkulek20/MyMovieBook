@@ -13,6 +13,8 @@ struct SignUpView: View {
     @State private var password = ""
     @State private var username = ""
     @State private var confirmPassword = ""
+    @State private var favMovies: [Movie] = []
+
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var viewModel: AuthViewModel
 
@@ -145,6 +147,7 @@ struct SignUpView: View {
 
                         Spacer()
                     }
+                    
 
 
                     .padding()
@@ -168,6 +171,7 @@ struct SignUpView: View {
 
             Button {
                 Task {
+                
                     try await viewModel.createUser(withEmail: email, password: password, fullname: username)
                 }
             } label: {
